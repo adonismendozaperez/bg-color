@@ -1,0 +1,8 @@
+{
+  "short_name": "bg_color",
+  "name": "bg_color App",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
