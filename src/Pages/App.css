@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+p{
+  font-size: 2.5em;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#bt_set_color{
+  width: 20%;
+  padding: 10px 16px;
+  margin-right: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 400;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background-color: #2BBBAD;
+}
+.copyOff{
+  display: none;
+}
+.copyOn{
+  display: inline !important;
+  cursor: pointer;
+  font-size: 1.7em;
+}
+#text{
+  font-size: 2.5em;
+  width: 200px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: none;
+}
+#snackbar {
+  visibility: hidden; 
+  min-width: 250px; 
+  margin-left: -125px; 
+  background-color: #333; 
+  color: #fff; 
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px; 
+  position: fixed; 
+  z-index: 1; 
+  left: 50%; 
+  bottom: 30px; 
+}
+#snackbar.show {
+  visibility: visible;
+ -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+ animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
