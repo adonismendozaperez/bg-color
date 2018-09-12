@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
-    "react-scripts": "1.1.5",
-    "homepage" : "http://adonismendozaperez.github.io/bg-color"
+    "react-scripts": "1.1.5"
   },
+  "homepage": "http://adonismendozaperez.github.io/bg-color",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -15,5 +16,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adonismendozaperez/bg-color.git"
+  },
+  "author": "Adonis Mendoza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adonismendozaperez/bg-color/issues"
+  },
+  "description": ""
 }
