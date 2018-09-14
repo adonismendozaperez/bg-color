@@ -37,11 +37,12 @@ p{
   font-size: 1.7em;
 }
 #text{
-  font-size: 2.5em;
-  width: 200px;
+  width: 150px;
   margin-bottom: 20px;
-  text-align: center;
   border: none;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  text-align: -webkit-center;
 }
 #snackbar {
   visibility: hidden; 
