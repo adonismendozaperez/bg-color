@@ -12,8 +12,13 @@ class App extends Component {
   }
 
   bg_color() {
+    let color = Math.round(0xffffff * Math.random()).toString(16);
+    let missing = (6 - color.length);
+    let template = "000000";
+    let missingResult = template.substring(0,missing);
+
     this.setState({
-      color: `#${Math.floor(Math.random()*16777215).toString(16)}`
+      color: `#${missingResult + color}`
     });
     document.querySelector(".fa-copy").classList  = "far fa-copy copyOn";
   }
